@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile Card</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <article data-testid="test-profile-card">
+    <figure>
+      <img
+        src="images/my-avatar.jpg" alt="My Profile Picture" data-testid="test-user-avatar" id="avatar-img"/>
+
+      <figcaption style="display: none;">User Avatar</figcaption>
+    </figure>
+
+    <div class="profile-content">
+      <header>
+        <h2 data-testid="test-user-name" aria-label="User Name">Wisdom Paul</h2>
+      </header>
+
+      <p data-testid="test-user-bio">
+        Hi, i'm Paul, a frontend developer with a product-first mindset who loves writing clean code, i'm passionate about creating friendly user experiences and building web applications. I love Watching movies, and hanging out with my friends while we play video games.
+      </p>
+
+      <div class="time" data-testid="test-user-time" id="current-time"></div>
+
+      <nav aria-label="User social links" data-testid="test-user-social-links">
+        <ul>
+          <li><a href="https://x.com/paulwizzi?s=21" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-twitter">Twitter</a></li>
+          <li><a href="https://github.com" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-github">GitHub</a></li>
+          <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-linkedin">LinkedIn</a></li>
+        </ul>
+      </nav>
+
+      <section>
+        <h3>Hobbies❤️</h3>
+        <ul data-testid="test-user-hobbies">
+          <li>Playing video games</li>
+          <li>Movies</li>
+          <li>Reading Sci-fi</li>
+          <li>Watching and playing football</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>Dislikes👎</h3>
+        <ul data-testid="test-user-dislikes">
+          <li>Cluttered code</li>
+          <li>Loud environments</li>
+          <li>Traffic</li>
+          <li>Disloyalty</li>
+        </ul>
+      </section>
+    </div>
+  </article>
+
+  <nav class="site-nav" aria-label="Main site navigation">
+    <ul>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,190 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 1rem;
+  background: #f9f9f9;
+}
+
+article[data-testid="test-profile-card"] {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  max-width: 800px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media (min-width: 600px) {
+  article[data-testid="test-profile-card"] {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+figure {
+  margin: 0;
+  flex-shrink: 0;
+}
+
+img[data-testid="test-user-avatar"] {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+}
+
+.profile-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+nav[data-testid="test-user-social-links"] ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+nav a:focus {
+  outline: 2px solid #0077cc;
+  outline-offset: 2px;
+}
+
+section ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+}
+
+.time {
+  font-family: monospace;
+  font-size: 0.9rem;
+}
+
+/* Site navigation */
+.site-nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin: 1rem 0 0;
+}
+
+.site-nav a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+.site-nav a:focus {
+  outline: 3px solid #ffbf00;
+  outline-offset: 3px;
+}
+
+/* Form styles */
+main {
+  max-width: 900px;
+  margin: 1rem auto;
+  padding: 0 1rem;
+}
+
+form {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-bottom: 0.75rem;
+}
+
+label {
+  font-weight: 600;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font: inherit;
+}
+
+input:focus, textarea:focus {
+  outline: 3px solid #bde4ff;
+  outline-offset: 2px;
+}
+
+.form-actions {
+  margin-top: 0.5rem;
+}
+
+.error {
+  color: #b00020;
+  font-size: 0.9rem;
+  min-height: 1.25rem;
+}
+
+.success {
+  color: #006400;
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+
+button[type="submit"] {
+  background: #0077cc;
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:focus {
+  outline: 3px solid #ffbf00;
+  outline-offset: 3px;
+}
+
+/* Responsive: two-column layout for larger screens */
+@media (min-width: 700px) {
+  .form-row.row-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+}
+
+/* About page spacing */
+main[data-testid="test-about-page"] {
+  max-width: 900px;
+  margin: 1rem auto;
+  padding: 0 1rem;
+}
+
+main[data-testid="test-about-page"] section {
+  background: #fff;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+/* Make focus outlines visible for keyboard users */
+:focus {
+  outline: 2px solid Highlight;
+  outline-offset: 2px;
+}
